@@ -9,6 +9,7 @@ class ProjectSchema extends Schema {
       table.increments()
       // Relacion un proyecto - un usuario
       table.integer('user_id').unsigned().references('id').inTable('users')
+      table.string('name', 80).notNullable()
       table.timestamps()
     })
   }

@@ -23,6 +23,7 @@ Route.get('/', () => {
 Route.group(() => {
   Route.post('usuarios/registro', 'UserController.store')
   Route.post('usuarios/login', 'UserController.login')
+  Route.get('proyectos', 'ProjectController.index')
 }).prefix('api/')
 
 // //Agrupación de rutas
@@ -30,3 +31,4 @@ Route.group(() => {
 //   Route.post('usuarios/registro', 'UserController.store')
 //   Route.post('usuarios/reg', 'UserController.store')
 // }).prefix('api/v2/')
+

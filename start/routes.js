@@ -22,6 +22,7 @@ Route.get('/', () => {
 //Agrupación de rutas
 Route.group(() => {
   Route.post('usuarios/registro', 'UserController.store')
+  Route.post('usuarios/login', 'UserController.login')
 }).prefix('api/')
 
 // //Agrupación de rutas
